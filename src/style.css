@@ -1,1 +1,114 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.contenedor {
+  background-color: rgb(95, 91, 91);
+  color: white;
+  width: 2px auto;
+  height: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+/*Componente formulario*/
+.container-formulario {
+  background-color: rgb(109, 100, 99);
+  margin-top: 30px;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+input {
+  padding: 7px;
+  margin: 10px;
+}
+
+.botones-formulario {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.botones-formulario button {
+  font-size: 80px;
+  width: max-content;
+  padding: 0px 20px;
+  background-color: rgb(131, 116, 116);
+  cursor: pointer;
+}
+.x {
+  color: rgb(16, 133, 133);
+}
+.o {
+  color: rgb(199, 199, 96);
+}
+
+/*Componente Game */
+.play-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.main-container {
+  border: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 50%;
+}
+.btn-inicio-juego {
+  margin: 20px;
+}
+.grid-game {
+  margin-top: 5px;
+  width: 400px;
+  height: 60%;
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: 150px 150px 150px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(136, 133, 133);
+  border-top: 1px solid rgb(138, 136, 136);
+  border-left: 1px solid rgb(138, 136, 136);
+  cursor: pointer;
+  font-size: 120px;
+}
+
+.box:nth-child(-n + 2) {
+  border-top: 1px solid rgb(138, 136, 136);
+}
+.box:nth-child(odd) {
+  border-left: 1px solid rgb(138, 136, 136);
+}
+/*first three cells*/
+.box:nth-child(-n + 3) {
+  border-top: none;
+}
+/* every third cells */
+.box:first-child,
+.box:nth-child(3n + 1) {
+  border-left: none;
+}
+
+/* End Game */
